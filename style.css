@@ -1,0 +1,26 @@
+* {
+    margin: 10px;
+}
+
+h2 {
+    font-family: fantasy;
+    font-size: 50px;
+    color: blueviolet;
+    text-shadow: 2px 2px lightsteelblue;
+}
+#calcy {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 100px;
+    background-color: lightsteelblue;
+}
+#num {
+    color: red;
+   background: transparent;
+    border: transparent;
+   font-size: 35px;
+    }
+button {
+    color: darkblue;
+    font-size: 30px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main ng-controller="calculatorCtrl">
+        <section>
+
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h2>Garima's Calculator</h2>
+                    <div id="calcy">
+                        <div>
+                            <input id="num" type="text" value="{{display}}"><br>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span> <button value="+" ng-click="math('+')">+</button>
+                                    <button value="-" ng-click="math('-')">-</button>
+                                    <button value="*" ng-click="math('*')">x</button>
+                                    <button value="/" ng-click="math('/')">/</button>
+                                    <button value="=" ng-click="e('=')">=</button>
+                                </span>
+                                <br><br>
+                                <span>
+                                    <button value="7" ng-click="math('7')">7</button>
+                                    <button value="8" ng-click="math('8')">8</button>
+                                    <button value="9" ng-click="math('9')">9</button><br>
+                                    <span>
+                                        <button value="4" ng-click="math('4')">4</button>
+                                        <button value="5" ng-click="math('5')">5</button>
+                                        <button value="6" ng-click="math('6')">6</button><br>
+                                    </span>
+                                    <span>
+                                        <button value="1" ng-click="math('1')">1</button>
+                                        <button value="2" ng-click="math('2')">2</button>
+                                        <button value="3" ng-click="math('3')">3</button><br>
+                                    </span>
+                                    <span>
+                                        <button value="0" ng-click="math('0')">0</button>
+                                        <button value="%" ng-click="math('%')">%</button>
+                                        <button value="." ng-click="math('.')">.</button>
+                                        <button value="c" ng-click="c('')">C</button>
+                                    </span>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+
+                </div>
+        </section>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
